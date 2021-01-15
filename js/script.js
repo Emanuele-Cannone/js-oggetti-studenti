@@ -47,11 +47,6 @@ var studenti = [
     eta : 99
   },
   {
-    nome : 'emanuele',
-    cognome : 'tarconi',
-    eta : 99
-  },
-  {
     nome : 'giacomo',
     cognome : 'biffi',
     eta : 99
@@ -70,9 +65,17 @@ console.log('esercizio 3');
 
 // 3 - Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
-var nomeNuovo = prompt('inserisci il nome');
-var cognomeNuovo = prompt('inserisci il cognome');
-var etaNuovo = parseInt(prompt('inserisci l\' eta'));
-var j;
 
-studenti[k][j].push(nomeNuovo);
+var nuovoNome = prompt('inserisci il nome');
+var nuovoCognome = prompt('inserisci il cognome');
+var nuovoEta = parseInt(prompt('inserisci l\' eta'));
+
+
+var nuovoStudente =
+{
+  nome : nuovoNome,
+  cognome : nuovoCognome,
+  eta : nuovoEta
+} 
+
+studenti.push(nuovoStudente);
