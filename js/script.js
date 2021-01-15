@@ -65,6 +65,14 @@ for( var k in studenti){ // per ogni oggetto all'interno dell'array studenti
 }
 
 
-
 console.log('esercizio 3');
 
+
+// 3 - Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+var nomeNuovo = prompt('inserisci il nome');
+var cognomeNuovo = prompt('inserisci il cognome');
+var etaNuovo = parseInt(prompt('inserisci l\' eta'));
+var j;
+
+studenti[k][j].push(nomeNuovo);
